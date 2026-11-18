@@ -1,5 +1,17 @@
 # Cara Menjalankan & Mempublikasikan APMOI
 
+## 0. Status produksi saat ini
+
+Website sudah **online permanen** di:
+
+```
+https://fernandoalbert.github.io/apmoi-web/
+```
+
+- GitHub Pages aktif dari branch `main`, path `/` (root).
+- Setiap push ke `main` langsung deploy otomatis.
+- HTTPS aktif, PWA installable, tanpa perlu beli domain.
+
 ## 1. Server lokal / LAN
 
 ```bash

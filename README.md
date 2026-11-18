@@ -68,6 +68,15 @@ Website ini sudah mendukung **Progressive Web App**:
 
 Cara pasang di Android: buka URL di Chrome → menu ⋮ → **"Add to Home screen"** / **"Install app"**.
 
+## Alamat produksi (permanen, gratis)
+
+**https://fernandoalbert.github.io/apmoi-web/**
+
+- Aktif via GitHub Pages, source: branch `main`, folder `/` (root).
+- Setiap push ke `main` otomatis meng-update website.
+- HTTPS sudah aktif; PWA bisa di-install langsung dari alamat ini.
+- Domain `apmoi.id` bisa dipasang kemudian lewat **Settings → Pages → Custom domain** tanpa mengubah kode.
+
 ## Catatan
 
 Angka statistik, biaya iuran, nama media, dan pengurus adalah **data contoh**. Alamat website media di `js/media.js` juga bersifat ilustratif. Ganti dengan data resmi APMOI sebelum dipublikasikan.
