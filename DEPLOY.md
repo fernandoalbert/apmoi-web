@@ -5,12 +5,13 @@
 Website sudah **online permanen** di:
 
 ```
-https://fernandoalbert.github.io/apmoi-web/
+https://apmoi.surge.sh/
 ```
 
-- GitHub Pages aktif dari branch `main`, path `/` (root).
-- Setiap push ke `main` langsung deploy otomatis.
-- HTTPS aktif, PWA installable, tanpa perlu beli domain.
+- Alamat utama memakai Surge.sh: HTTPS aktif, gratis, permanen, tanpa beli domain.
+- Deploy ulang: `surge . apmoi.surge.sh` (dari folder proyek).
+- Cermin cadangan: GitHub Pages branch `main`, path `/` (root); push ke `main` meng-update cermin.
+- PWA installable dari alamat utama.
 
 ## 1. Server lokal / LAN
 
@@ -87,7 +88,7 @@ Lalu tambahkan domain tersebut di dashboard hosting (Netlify/Vercel) dan aktifka
 1. Buka https://search.google.com/search-console → **Add property**
 2. Pilih **URL prefix** → masukkan:
    ```
-   https://fernandoalbert.github.io/apmoi-web/
+   https://apmoi.surge.sh/
    ```
 3. Pilih metode **HTML tag** → copy nilai `content="..."` dari meta tag yang diberikan Google
 4. Jalankan:

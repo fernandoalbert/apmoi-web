@@ -70,12 +70,13 @@ Cara pasang di Android: buka URL di Chrome → menu ⋮ → **"Add to Home scree
 
 ## Alamat produksi (permanen, gratis)
 
-**https://fernandoalbert.github.io/apmoi-web/**
+**https://apmoi.surge.sh/**
 
-- Aktif via GitHub Pages, source: branch `main`, folder `/` (root).
-- Setiap push ke `main` otomatis meng-update website.
-- HTTPS sudah aktif; PWA bisa di-install langsung dari alamat ini.
-- Domain `apmoi.id` bisa dipasang kemudian lewat **Settings → Pages → Custom domain** tanpa mengubah kode.
+- Aktif via Surge.sh (hosting statis gratis, HTTPS otomatis, permanen tanpa domain berbayar).
+- Source: folder proyek ini; deploy dengan `surge . apmoi.surge.sh`.
+- Cermin cadangan: GitHub Pages dari branch `main`, folder `/` (root).
+- PWA bisa di-install langsung dari alamat utama di atas.
+- Domain `apmoi.id` bisa dipasang kemudian tanpa mengubah kode.
 
 ## Catatan
 
