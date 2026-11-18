@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="media-desc">${m.deskripsi}</p>
         <div class="media-meta"><span class="badge-soft">${m.kategori}</span><span class="badge-soft gray">📍 ${m.provinsi}</span></div>
         <div class="media-foot">
-          <span>${m.platform}<br /><strong>Pembaca: ${m.trafik === "-" ? "Belum dilaporkan" : m.trafik}</strong></span>
+          <span>${m.platform}<br /><strong>Pembaca: ${m.trafik === "-" ? "Belum dilaporkan" : m.trafik}</strong> · Bergabung ${m.sejak === "-" ? "—" : m.sejak}</span>
           <a href="media-detail.html?id=${i}">Lihat detail →</a>
         </div>
       </article>`).join("");
