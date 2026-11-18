@@ -82,6 +82,24 @@ Setelah dapat URL hosting, di pengaturan DNS domain `apmoi.id`:
 
 Lalu tambahkan domain tersebut di dashboard hosting (Netlify/Vercel) dan aktifkan HTTPS gratis.
 
+## Verifikasi Google Search Console
+
+1. Buka https://search.google.com/search-console → **Add property**
+2. Pilih **URL prefix** → masukkan:
+   ```
+   https://fernandoalbert.github.io/apmoi-web/
+   ```
+3. Pilih metode **HTML tag** → copy nilai `content="..."` dari meta tag yang diberikan Google
+4. Jalankan:
+   ```bash
+   python3 set_google_verification.py KODE_DARI_GOOGLE
+   ```
+   Skrip ini otomatis:
+   - memasang `<meta name="google-site-verification" content="...">` di semua halaman
+   - membuat file `googleKODE.html` di root
+   - commit + push ke GitHub Pages (set `GITHUB_TOKEN` dulu)
+5. Klik **Verify** di Search Console.
+
 ## Catatan
 
 - Semua halaman bersifat **statis** — tidak butuh database atau PHP.
