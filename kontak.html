@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontak dan formulir pesan untuk APMOI." />
+  <title>Hubungi Kami — APMOI</title>
+  <link rel="preload" as="image" href="assets/apmoi-logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a1a33" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+</head>
+<body data-page="kontak">
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="APMOI Beranda">
+        <span class="brand-plate"><img src="assets/apmoi-logo-transparent.png" alt="APMOI — Asosiasi Pengusaha Media Online Indonesia" class="brand-logo" width="722" height="300" /></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link" data-nav="home">Beranda</a>
+        <a href="tentang.html" class="nav-link" data-nav="tentang">Tentang</a>
+        <a href="program.html" class="nav-link" data-nav="program">Program</a>
+        <a href="daftar-media.html" class="nav-link" data-nav="media">Daftar Media</a>
+        <a href="berita.html" class="nav-link" data-nav="berita">Berita</a>
+        <a href="persyaratan.html" class="nav-link" data-nav="persyaratan">Persyaratan</a>
+      </nav>
+      <div class="header-actions">
+        <a href="kontak.html" class="btn btn-ghost">Hubungi</a>
+        <a href="pendaftaran.html" class="btn btn-primary btn-sm">Gabung APMOI <span aria-hidden="true">→</span></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Kontak</span></div>
+        <h1>Hubungi Kami</h1>
+        <p>Punya pertanyaan seputar keanggotaan, program, atau kerja sama? Tim APMOI siap membantu Anda.</p>
+        
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <div class="section-tag"><span></span> Informasi Kontak</div>
+          <h2 class="section-title">Mari berbicara.</h2>
+          <p class="section-desc" style="margin-bottom:26px">Silakan kirim pesan melalui formulir atau hubungi kami langsung melalui kanal berikut.</p>
+          <div class="info-card"><div class="info-icon">⌖</div><div><h4>Alamat Kantor</h4><p>Jl. Media Digital No. 12<br />Jakarta Selatan, DKI Jakarta 12950</p></div></div>
+          <div class="info-card"><div class="info-icon">✉</div><div><h4>Email</h4><p>hello@apmoi.id<br />keanggotaan@apmoi.id</p></div></div>
+          <div class="info-card"><div class="info-icon">☎</div><div><h4>Telepon</h4><p>+62 21 0000 1234<br />WhatsApp: +62 811 0000 1234</p></div></div>
+          <div class="info-card"><div class="info-icon">◷</div><div><h4>Jam Operasional</h4><p>Senin – Jumat, 09.00 – 17.00 WIB<br />Sabtu: 09.00 – 12.00 WIB</p></div></div>
+        </div>
+        <div>
+          <form class="form-card reveal" id="kontakForm" data-validate="kontak" novalidate>
+            <h3 class="form-section-title"><span>✉</span> Kirim Pesan</h3>
+            <div class="form-grid">
+              <div class="field"><label class="field-label" for="nama">Nama Lengkap <span class="req">*</span></label><input id="nama" name="nama" type="text" placeholder="Nama Anda" data-rule="required|min3" data-error="Nama wajib diisi." /><span class="error-msg"></span></div>
+              <div class="field"><label class="field-label" for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" placeholder="nama@email.com" data-rule="required|email" data-error="Masukkan email yang valid." /><span class="error-msg"></span></div>
+              <div class="field full"><label class="field-label" for="subjek">Subjek <span class="req">*</span></label><select id="subjek" name="subjek" data-rule="required" data-error="Pilih subjek pesan."><option value="">— Pilih subjek —</option><option>Pertanyaan keanggotaan</option><option>Pertanyaan program</option><option>Kerja sama / sponsor</option><option>Media dan publikasi</option><option>Lainnya</option></select><span class="error-msg"></span></div>
+              <div class="field full"><label class="field-label" for="pesan">Pesan <span class="req">*</span></label><textarea id="pesan" name="pesan" placeholder="Tuliskan pesan Anda..." data-rule="required|min3" data-error="Pesan wajib diisi."></textarea><span class="error-msg"></span></div>
+            </div>
+            <div class="form-actions"><button type="submit" class="btn btn-primary btn-lg">Kirim Pesan <span>→</span></button><span class="note">Kami akan membalas dalam 1–2 hari kerja.</span></div>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h2>Pesan Terkirim</h2>
+            <p>Terima kasih, <strong id="successName">Anda</strong>. Pesan Anda telah kami terima dan akan kami balas melalui email dalam 1–2 hari kerja.</p>
+            <div class="reg-id">Kode Pesan: <span id="successCode">APM-2026-000000</span></div>
+            <div style="margin-top:26px"><a href="index.html" class="btn btn-primary">Kembali ke Beranda</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-plate"><img src="assets/apmoi-logo-transparent.png" alt="APMOI" class="brand-logo" width="722" height="300" /></span>
+          </a>
+          <p>Asosiasi Pengusaha Media Online Indonesia — wadah kolaborasi untuk ekosistem media digital yang sehat dan berkelanjutan.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Twitter">x</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="program.html">Program</a>
+          <a href="berita.html">Berita</a>
+          <a href="daftar-media.html">Daftar Media</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tentang</h4>
+          <a href="tentang.html#visi-misi">Visi & Misi</a>
+          <a href="tentang.html#struktur">Struktur Organisasi</a>
+          <a href="persyaratan.html">Persyaratan Anggota</a>
+          <a href="pendaftaran.html">Pendaftaran</a>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <p>Jl. Media Digital No. 12<br />Jakarta Selatan, DKI Jakarta</p>
+          <p>hello@apmoi.id<br />+62 21 0000 1234</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 APMOI. Seluruh hak cipta dilindungi.</p>
+        <div><a href="kebijakan.html">Kebijakan Privasi</a><a href="kebijakan.html#syarat">Syarat & Ketentuan</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>

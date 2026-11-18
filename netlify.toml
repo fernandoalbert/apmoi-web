@@ -1,0 +1,33 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/artikel"
+  to = "/artikel.html"
+  status = 200
+
+[[redirects]]
+  from = "/media-detail"
+  to = "/media-detail.html"
+  status = 200
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Service-Worker-Allowed = "/"
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"

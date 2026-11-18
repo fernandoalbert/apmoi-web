@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formulir pendaftaran keanggotaan APMOI." />
+  <title>Pendaftaran Anggota — APMOI</title>
+  <link rel="preload" as="image" href="assets/apmoi-logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a1a33" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+</head>
+<body data-page="pendaftaran">
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="APMOI Beranda">
+        <span class="brand-plate"><img src="assets/apmoi-logo-transparent.png" alt="APMOI — Asosiasi Pengusaha Media Online Indonesia" class="brand-logo" width="722" height="300" /></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link" data-nav="home">Beranda</a>
+        <a href="tentang.html" class="nav-link" data-nav="tentang">Tentang</a>
+        <a href="program.html" class="nav-link" data-nav="program">Program</a>
+        <a href="daftar-media.html" class="nav-link" data-nav="media">Daftar Media</a>
+        <a href="berita.html" class="nav-link" data-nav="berita">Berita</a>
+        <a href="persyaratan.html" class="nav-link" data-nav="persyaratan">Persyaratan</a>
+      </nav>
+      <div class="header-actions">
+        <a href="kontak.html" class="btn btn-ghost">Hubungi</a>
+        <a href="pendaftaran.html" class="btn btn-primary btn-sm">Gabung APMOI <span aria-hidden="true">→</span></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Pendaftaran</span></div>
+        <h1>Formulir Pendaftaran Anggota</h1>
+        <p>Isi data dengan lengkap dan benar. Pastikan Anda telah menyiapkan dokumen persyaratan sebelum mengirimkan formulir.</p>
+        
+      </div>
+    </section>
+    <section class="page-section tint">
+      <div class="container">
+        <div class="form-layout">
+          <aside class="form-side reveal">
+            <div class="section-tag"><span></span> Sebelum mengisi</div>
+            <h2>Yang perlu disiapkan</h2>
+            <p>Proses pengisian memakan waktu sekitar 10–15 menit. Pastikan data yang Anda masukkan sesuai dengan dokumen resmi media.</p>
+            <ul class="form-tips">
+              <li><span>1</span><div><strong>Data media</strong><br />Nama, alamat website, kategori, dan perkiraan jumlah pembaca.</div></li>
+              <li><span>2</span><div><strong>Data pengurus</strong><br />Nama, jabatan, email aktif, dan nomor telepon yang dapat dihubungi.</div></li>
+              <li><span>3</span><div><strong>Berkas persyaratan</strong><br />Akta usaha, NPWP, KTP pengurus, dan surat pernyataan.</div></li>
+              <li><span>4</span><div><strong>Kode etik</strong><br />Baca dan setujui Kode Etik APMOI sebelum mengirim.</div></li>
+            </ul>
+            <div style="margin-top:28px;padding:20px;background:#fff;border:1px solid var(--border);border-radius:12px">
+              <h4 style="font-size:.85rem;color:var(--navy);margin-bottom:8px">Belum yakin memenuhi syarat?</h4>
+              <p style="font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:14px">Periksa dulu kriteria dan daftar dokumen yang dibutuhkan.</p>
+              <a href="persyaratan.html" class="link-arrow" style="margin-top:0">Lihat persyaratan <span>→</span></a>
+            </div>
+          </aside>
+
+          <div>
+            <form class="form-card reveal" id="pendaftaranForm" data-validate="pendaftaran" novalidate>
+              <h3 class="form-section-title"><span>1</span> Data Media</h3>
+              <div class="form-grid">
+                <div class="field full"><label class="field-label" for="nama_media">Nama Media <span class="req">*</span></label><input id="nama_media" name="nama_media" type="text" placeholder="Contoh: MediaNusa" data-rule="required|min3" data-error="Nama media wajib diisi (minimal 3 karakter)." /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="website">Alamat Website <span class="req">*</span></label><input id="website" name="website" type="url" placeholder="https://namamedia.id" data-rule="required|url" data-error="Gunakan format https://namamedia.id" /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="kategori_media">Kategori Media <span class="req">*</span></label><select id="kategori_media" name="kategori_media" data-rule="required" data-error="Pilih kategori media."><option value="">— Pilih kategori —</option><option>Umum</option><option>Teknologi</option><option>Bisnis</option><option>Daerah</option><option>Gaya Hidup</option><option>Olahraga</option><option>Pendidikan</option><option>Kesehatan</option><option>Otomotif</option><option>Hiburan</option><option>Lingkungan</option></select><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="provinsi_media">Provinsi <span class="req">*</span></label><select id="provinsi_media" name="provinsi_media" data-rule="required" data-error="Pilih provinsi."><option value="">— Pilih provinsi —</option><option>DKI Jakarta</option><option>Jawa Barat</option><option>Jawa Timur</option><option>Jawa Tengah</option><option>Yogyakarta</option><option>Sumatera Utara</option><option>Bali</option><option>Sulawesi Selatan</option><option>Kalimantan Timur</option></select><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="tahun">Tahun Berdiri <span class="req">*</span></label><input id="tahun" name="tahun" type="number" min="1990" max="2026" placeholder="2018" data-rule="required" data-error="Tahun berdiri wajib diisi." /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="pembaca">Perkiraan Pembaca / bulan <span class="req">*</span></label><select id="pembaca" name="pembaca" data-rule="required" data-error="Pilih rentang pembaca."><option value="">— Pilih rentang —</option><option>&lt; 5.000</option><option>5.000 – 100.000</option><option>100.000 – 1.000.000</option><option>&gt; 1.000.000</option></select><span class="error-msg"></span></div>
+                <div class="field full"><label class="field-label" for="sosmed">Akun Media Sosial</label><input id="sosmed" name="sosmed" type="text" placeholder="Instagram: @medianusa · YouTube: @medianusa" /><div class="field-hint">Opsional, pisahkan dengan tanda koma.</div></div>
+                <div class="field full"><label class="field-label" for="deskripsi">Deskripsi Singkat Media <span class="req">*</span></label><textarea id="deskripsi" name="deskripsi" placeholder="Ceritakan fokus dan kekuatan media Anda dalam 2–3 kalimat..." data-rule="required|min3" data-error="Deskripsi wajib diisi."></textarea><span class="error-msg"></span></div>
+              </div>
+
+              <h3 class="form-section-title"><span>2</span> Data Pengurus</h3>
+              <div class="form-grid">
+                <div class="field"><label class="field-label" for="nama">Nama Lengkap Pengurus <span class="req">*</span></label><input id="nama" name="nama" type="text" placeholder="Nama sesuai KTP" data-rule="required|min3" data-error="Nama pengurus wajib diisi." /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="jabatan">Jabatan <span class="req">*</span></label><input id="jabatan" name="jabatan" type="text" placeholder="Contoh: Pemimpin Redaksi" data-rule="required" data-error="Jabatan wajib diisi." /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="email">Email Aktif <span class="req">*</span></label><input id="email" name="email" type="email" placeholder="nama@medianusa.id" data-rule="required|email" data-error="Masukkan alamat email yang valid." /><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="telepon">Nomor Telepon / WhatsApp <span class="req">*</span></label><input id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx" data-rule="required" data-error="Nomor telepon wajib diisi." /><span class="error-msg"></span></div>
+              </div>
+
+              <h3 class="form-section-title"><span>3</span> Dokumen Pendukung</h3>
+              <div class="form-grid">
+                <div class="field"><label class="field-label" for="akta">Akta Pendirian / SIUP <span class="req">*</span></label><div class="file-drop"><input id="akta" name="akta" type="file" accept=".pdf,.jpg,.jpeg,.png" data-rule="required" data-error="Berkas akta wajib diunggah." /><div class="field-hint">PDF / JPG / PNG · maks. 5 MB</div></div><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="npwp">NPWP Perusahaan <span class="req">*</span></label><div class="file-drop"><input id="npwp" name="npwp" type="file" accept=".pdf,.jpg,.jpeg,.png" data-rule="required" data-error="Berkas NPWP wajib diunggah." /><div class="field-hint">PDF / JPG / PNG · maks. 5 MB</div></div><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="ktp">KTP Pengurus <span class="req">*</span></label><div class="file-drop"><input id="ktp" name="ktp" type="file" accept=".pdf,.jpg,.jpeg,.png" data-rule="required" data-error="Berkas KTP wajib diunggah." /><div class="field-hint">PDF / JPG / PNG · maks. 5 MB</div></div><span class="error-msg"></span></div>
+                <div class="field"><label class="field-label" for="pernyataan">Surat Pernyataan Kode Etik <span class="req">*</span></label><div class="file-drop"><input id="pernyataan" name="pernyataan" type="file" accept=".pdf,.jpg,.jpeg,.png" data-rule="required" data-error="Surat pernyataan wajib diunggah." /><div class="field-hint">Bermeterai · PDF / JPG · maks. 5 MB</div></div><span class="error-msg"></span></div>
+              </div>
+
+              <h3 class="form-section-title"><span>4</span> Deklarasi</h3>
+              <div class="field">
+                <label class="check-row"><input type="checkbox" name="setuju" data-rule="required" data-error="Anda harus menyetujui deklarasi." /><span>Saya menyatakan bahwa data yang diberikan adalah benar dan saya telah membaca serta menyetujui <a href="kebijakan.html#syarat">Kode Etik & Syarat Ketentuan APMOI</a>.</span></label>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-accent btn-lg">Kirim Pendaftaran <span>→</span></button>
+                <span class="note">Data Anda hanya digunakan untuk proses keanggotaan.</span>
+              </div>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="success-icon">✓</div>
+              <h2>Pendaftaran Berhasil Dikirim</h2>
+              <p>Terima kasih, <strong id="successName">Anda</strong>. Tim sekretariat APMOI akan memeriksa berkas dan menghubungi Anda melalui email dalam 3–5 hari kerja.</p>
+              <div class="reg-id">Kode Pendaftaran: <span id="successCode">APM-2026-000000</span></div>
+              <div style="margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+                <a href="daftar-media.html" class="btn btn-primary">Lihat Daftar Media</a>
+                <a href="index.html" class="btn btn-ghost">Kembali ke Beranda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-plate"><img src="assets/apmoi-logo-transparent.png" alt="APMOI" class="brand-logo" width="722" height="300" /></span>
+          </a>
+          <p>Asosiasi Pengusaha Media Online Indonesia — wadah kolaborasi untuk ekosistem media digital yang sehat dan berkelanjutan.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Twitter">x</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="program.html">Program</a>
+          <a href="berita.html">Berita</a>
+          <a href="daftar-media.html">Daftar Media</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tentang</h4>
+          <a href="tentang.html#visi-misi">Visi & Misi</a>
+          <a href="tentang.html#struktur">Struktur Organisasi</a>
+          <a href="persyaratan.html">Persyaratan Anggota</a>
+          <a href="pendaftaran.html">Pendaftaran</a>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <p>Jl. Media Digital No. 12<br />Jakarta Selatan, DKI Jakarta</p>
+          <p>hello@apmoi.id<br />+62 21 0000 1234</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 APMOI. Seluruh hak cipta dilindungi.</p>
+        <div><a href="kebijakan.html">Kebijakan Privasi</a><a href="kebijakan.html#syarat">Syarat & Ketentuan</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>

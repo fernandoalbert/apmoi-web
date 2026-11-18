@@ -1,0 +1,30 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/artikel", "destination": "/artikel.html" },
+    { "source": "/media-detail", "destination": "/media-detail.html" }
+  ],
+  "headers": [
+    {
+      "source": "/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" },
+        { "key": "Service-Worker-Allowed", "value": "/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

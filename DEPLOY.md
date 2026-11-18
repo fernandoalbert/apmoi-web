@@ -1,0 +1,79 @@
+# Cara Menjalankan & Mempublikasikan APMOI
+
+## 1. Server lokal / LAN
+
+```bash
+./start-server.sh 8080
+```
+
+Default bind `0.0.0.0`, jadi bisa diakses dari perangkat lain dalam jaringan yang sama:
+
+```
+http://<IP-LAN-kamu>:8080
+```
+
+Cek IP LAN: `hostname -I` (Linux) atau `ipconfig` (Windows).
+
+## 2. Online gratis permanen (paling mudah)
+
+### Opsi A — Netlify (drag & drop)
+1. Buka https://app.netlify.com/drop
+2. Masuk (GitHub/Google/email)
+3. Tarik (drag) **seluruh folder proyek ini** ke halaman tersebut
+4. Selesai — dapat URL `https://nama-acak.netlify.app`
+
+File `netlify.toml` sudah disiapkan.
+
+### Opsi B — Vercel
+```bash
+npm i -g vercel
+vercel --prod
+```
+Ikuti prompt. File `vercel.json` sudah disiapkan.
+
+### Opsi C — GitHub Pages (gratis, domain `*.github.io`)
+1. Buat repository baru di GitHub, misalnya `apmoi-web`
+2. Push semua file ke branch `main`:
+   ```bash
+   git init
+   git add .
+   git commit -m "Tema website APMOI"
+   git branch -M main
+   git remote add origin https://github.com/USERNAME/apmoi-web.git
+   git push -u origin main
+   ```
+3. Di repository → **Settings → Pages → Build and deployment**
+   - Source: **GitHub Actions**
+4. Workflow `.github/workflows/deploy.yml` akan otomatis deploy ke
+   `https://USERNAME.github.io/apmoi-web/`
+
+File `.nojekyll` sudah disiapkan agar folder tidak diabaikan.
+
+## 3. Server sendiri (Docker + Nginx)
+
+```bash
+docker build -t apmoi-web .
+docker run -d -p 8080:80 --name apmoi apmoi-web
+```
+
+Buka `http://IP-SERVER:8080`. Untuk produksi, pasang reverse proxy + SSL
+(Certbot) di depan Nginx.
+
+## 4. Domain sendiri
+
+Setelah dapat URL hosting, di pengaturan DNS domain `apmoi.id`:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A / ALIAS | `@` | IP hosting |
+| CNAME | `www` | hostname hosting |
+
+Lalu tambahkan domain tersebut di dashboard hosting (Netlify/Vercel) dan aktifkan HTTPS gratis.
+
+## Catatan
+
+- Semua halaman bersifat **statis** — tidak butuh database atau PHP.
+- Link artikel memakai query string: `artikel.html?id=1`.
+- Data media ada di `js/media.js`, artikel di `js/articles.js`.
+- Formulir saat ini menyimpan data ke `localStorage` browser pengunjung (demo).
+  Untuk produksi, hubungkan ke backend/API atau layanan form (Formspree, Netlify Forms, dll.).

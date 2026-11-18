@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*.zip
+NETLIFY_DEPLOY_INFO.json

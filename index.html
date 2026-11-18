@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="APMOI — Asosiasi Pengusaha Media Online Indonesia. Wadah kolaborasi, advokasi, dan pertumbuhan ekosistem media digital tanah air." />
+  <title>APMOI — Asosiasi Pengusaha Media Online Indonesia</title>
+  <link rel="preload" as="image" href="assets/apmoi-logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a1a33" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+</head>
+<body data-page="home">
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="APMOI Beranda">
+        <span class="brand-plate">
+          <img src="assets/apmoi-logo-transparent.png" alt="APMOI — Asosiasi Pengusaha Media Online Indonesia" class="brand-logo" width="722" height="300" />
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="index.html" class="nav-link active" data-nav="home">Beranda</a>
+        <a href="tentang.html" class="nav-link" data-nav="tentang">Tentang</a>
+        <a href="program.html" class="nav-link" data-nav="program">Program</a>
+        <a href="daftar-media.html" class="nav-link" data-nav="media">Daftar Media</a>
+        <a href="berita.html" class="nav-link" data-nav="berita">Berita</a>
+        <a href="persyaratan.html" class="nav-link" data-nav="persyaratan">Persyaratan</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="kontak.html" class="btn btn-ghost">Hubungi</a>
+        <a href="pendaftaran.html" class="btn btn-primary btn-sm">Gabung APMOI <span aria-hidden="true">→</span></a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="beranda">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow reveal">
+            <span class="eyebrow-dot"></span>
+            Asosiasi Pengusaha Media Online Indonesia
+          </div>
+          <h1 class="reveal">Ekosistem media online yang <span class="grad-text">kuat & berkelanjutan.</span></h1>
+          <p class="hero-desc reveal">
+            APMOI menyatukan pengusaha media digital Indonesia untuk berkolaborasi,
+            memperjuangkan kepentingan industri, dan membangun masa depan media online yang sehat.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="pendaftaran.html" class="btn btn-accent btn-lg">Gabung APMOI <span aria-hidden="true">→</span></a>
+            <a href="tentang.html" class="btn btn-outline-light btn-lg">Kenali Kami</a>
+          </div>
+          <div class="hero-trust reveal">
+            <div class="avatars" aria-hidden="true">
+              <span>PA</span><span>DT</span><span>KO</span><span>MR</span><span>+99</span>
+            </div>
+            <p><strong>150+ media online</strong> telah bergabung dan tumbuh bersama</p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="visual-card main-card">
+            <div class="card-top">
+              <div>
+                <span class="card-label">Ekosistem Media Digital</span>
+                <h3>Pertumbuhan Industri</h3>
+              </div>
+              <span class="badge-live"><i></i> Live</span>
+            </div>
+            <div class="chart">
+              <div class="chart-bar" style="--h:38%"><span></span></div>
+              <div class="chart-bar" style="--h:52%"><span></span></div>
+              <div class="chart-bar" style="--h:44%"><span></span></div>
+              <div class="chart-bar" style="--h:68%"><span></span></div>
+              <div class="chart-bar" style="--h:60%"><span></span></div>
+              <div class="chart-bar" style="--h:82%"><span></span></div>
+              <div class="chart-bar active" style="--h:96%"><span></span></div>
+            </div>
+            <div class="card-foot">
+              <div><small>Pembaca aktif</small><strong>28,4 Jt</strong></div>
+              <div><small>Media anggota</small><strong>150+</strong></div>
+              <div><small>Provinsi</small><strong>34</strong></div>
+            </div>
+          </div>
+
+          <div class="float-card float-1">
+            <div class="float-icon">↗</div>
+            <div><small>Traffic industri</small><strong>+38,6%</strong></div>
+          </div>
+          <div class="float-card float-2">
+            <div class="float-ring"><span>92%</span></div>
+            <div><small>Kepuasan anggota</small><strong>Sangat baik</strong></div>
+          </div>
+          <div class="float-chip">✦ Terverifikasi & Kredibel</div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="container stats-grid">
+          <div class="stat reveal"><strong data-count="150" data-suffix="+">0</strong><span>Media Anggota</span></div>
+          <div class="stat reveal"><strong data-count="34">0</strong><span>Provinsi Terjangkau</span></div>
+          <div class="stat reveal"><strong data-count="12" data-suffix="+">0</strong><span>Tahun Berpengalaman</span></div>
+          <div class="stat reveal"><strong data-count="60" data-suffix="+">0</strong><span>Program & Kegiatan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tentang ===== -->
+    <section class="section about" id="tentang">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-shape"></div>
+          <div class="about-img-card">
+            <div class="about-pattern"></div>
+            <div class="about-quote">
+              <span class="quote-mark">“</span>
+              <p>Media online yang kuat adalah fondasi demokrasi digital yang sehat.</p>
+              <div class="quote-by"><span>APMOI</span> — Asosiasi Pengusaha Media Online Indonesia</div>
+            </div>
+          </div>
+          <div class="about-badge">
+            <strong>2013</strong>
+            <small>Didirikan</small>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <div class="section-tag reveal"><span></span> Tentang Kami</div>
+          <h2 class="section-title reveal">Suara bersama pengusaha media online Indonesia.</h2>
+          <p class="section-desc reveal">
+            APMOI hadir sebagai rumah bersama bagi pelaku usaha media online di seluruh nusantara.
+            Kami bekerja untuk menciptakan iklim usaha yang kondusif, standar kualitas yang tinggi,
+            serta kolaborasi yang saling menguntungkan di industri media digital.
+          </p>
+
+          <div class="vision-mission reveal">
+            <div class="vm-item">
+              <div class="vm-icon">◎</div>
+              <div><h4>Visi</h4><p>Menjadi asosiasi terdepan yang mendorong media online Indonesia yang merdeka, profesional, dan berdaya saing global.</p></div>
+            </div>
+            <div class="vm-item">
+              <div class="vm-icon">◈</div>
+              <div><h4>Misi</h4><p>Advokasi kebijakan, peningkatan kapasitas anggota, perluasan jaringan, dan pengembangan standar industri media digital.</p></div>
+            </div>
+          </div>
+
+          <a href="program.html" class="link-arrow reveal">Lihat apa yang kami lakukan <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Program ===== -->
+    <section class="section programs" id="program">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-tag reveal"><span></span> Program Kami</div>
+          <h2 class="section-title reveal">Bertumbuh bersama, dalam setiap langkah.</h2>
+          <p class="section-desc reveal">Berbagai program dirancang untuk mendukung anggota dari berbagai aspek — mulai dari kebijakan hingga akses pasar.</p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card reveal">
+            <div class="program-icon blue">⚖︎</div>
+            <h3>Advokasi & Kebijakan</h3>
+            <p>Menyampaikan aspirasi industri dan mendampingi regulasi yang berpihak pada kebebasan pers digital.</p>
+            <span class="program-num">01</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-icon orange">✦</div>
+            <h3>Pendidikan & Pelatihan</h3>
+            <p>Workshop, sertifikasi, dan pendampingan untuk meningkatkan kualitas SDM media online.</p>
+            <span class="program-num">02</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-icon cyan">▤</div>
+            <h3>Riset & Data</h3>
+            <p>Menyediakan data tren industri, riset pembaca, dan insight strategis bagi pengambilan keputusan.</p>
+            <span class="program-num">03</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-icon purple">◇</div>
+            <h3>Networking & Kolaborasi</h3>
+            <p>Menghubungkan anggota dengan mitra, advertiser, dan pemangku kepentingan di tingkat nasional.</p>
+            <span class="program-num">04</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Berita ===== -->
+    <section class="section news" id="berita">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <div class="section-tag reveal"><span></span> Kabar Terbaru</div>
+            <h2 class="section-title reveal">Berita & Update Industri</h2>
+          </div>
+          <a href="berita.html" class="link-arrow reveal">Lihat semua berita <span>→</span></a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <div class="news-thumb thumb-1"><span class="news-cat">Kegiatan</span></div>
+            <div class="news-body">
+              <div class="news-meta">12 November 2026 · 4 menit baca</div>
+              <h3>APMOI Gelar Forum Nasional Media Digital 2026 di Jakarta</h3>
+              <p>Mengangkat tema “Kredibilitas di Era Algoritma”, forum ini menjadi ruang dialog strategis bagi pelaku media online.</p>
+              <a href="artikel.html?id=1" class="read-more">Baca selengkapnya <span>→</span></a>
+            </div>
+          </article>
+          <article class="news-card reveal">
+            <div class="news-thumb thumb-2"><span class="news-cat">Advokasi</span></div>
+            <div class="news-body">
+              <div class="news-meta">5 November 2026 · 6 menit baca</div>
+              <h3>Dorong Regulasi Platform Digital, APMOI Sampaikan Paparan ke DPR</h3>
+              <p>Asosiasi menekankan pentingnya perlindungan bagi publisher independen dalam ekosistem platform digital.</p>
+              <a href="artikel.html?id=2" class="read-more">Baca selengkapnya <span>→</span></a>
+            </div>
+          </article>
+          <article class="news-card reveal">
+            <div class="news-thumb thumb-3"><span class="news-cat">Riset</span></div>
+            <div class="news-body">
+              <div class="news-meta">28 Oktober 2026 · 5 menit baca</div>
+              <h3>Laporan Tren Media Online Indonesia Kuartal III 2026 Dirilis</h3>
+              <p>Riset terbaru menunjukkan pertumbuhan signifikan pada segmen video dan newsletter digital.</p>
+              <a href="artikel.html?id=3" class="read-more">Baca selengkapnya <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Anggota ===== -->
+    <section class="section members" id="anggota">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-tag reveal"><span></span> Anggota Kami</div>
+          <h2 class="section-title reveal">Bersama media-media terkemuka Indonesia.</h2>
+          <p class="section-desc reveal">Mereka adalah bagian dari komunitas yang terus bergerak memajukan industri media online tanah air.</p>
+        </div>
+        <div class="logo-cloud reveal">
+          <a class="logo-item" href="media-detail.html?id=0"><span class="logo-glyph g1">◆</span> MediaNusa</a>
+          <a class="logo-item" href="media-detail.html?id=1"><span class="logo-glyph g2">●</span> DigitalKita</a>
+          <a class="logo-item" href="media-detail.html?id=2"><span class="logo-glyph g3">▲</span> BeritaRakyat</a>
+          <a class="logo-item" href="media-detail.html?id=3"><span class="logo-glyph g4">■</span> InfoNasional</a>
+          <a class="logo-item" href="media-detail.html?id=4"><span class="logo-glyph g5">✦</span> SuaraOnline</a>
+          <a class="logo-item" href="media-detail.html?id=5"><span class="logo-glyph g6">●</span> JurnalDigital</a>
+          <a class="logo-item" href="media-detail.html?id=6"><span class="logo-glyph g7">◈</span> KabarDaerah</a>
+          <a class="logo-item" href="media-detail.html?id=7"><span class="logo-glyph g8">▲</span> TeknoUpdate</a>
+        </div>
+        <div class="center" style="text-align:center;margin-top:32px"><a href="daftar-media.html" class="btn btn-primary">Lihat Semua Daftar Media <span>→</span></a></div>
+      </div>
+    </section>
+
+    <!-- ===== CTA Gabung ===== -->
+    <section class="cta" id="gabung">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <div class="cta-content">
+            <div class="section-tag light"><span></span> Bergabunglah</div>
+            <h2>Jadilah bagian dari perubahan media online Indonesia.</h2>
+            <p>Dapatkan akses jaringan, pelatihan, advokasi, dan dukungan untuk mengembangkan media Anda bersama kami.</p>
+            <div class="cta-actions">
+              <a href="pendaftaran.html" class="btn btn-accent btn-lg">Daftar Sekarang <span>→</span></a>
+              <a href="kontak.html" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-plate">
+              <img src="assets/apmoi-logo-transparent.png" alt="APMOI — Asosiasi Pengusaha Media Online Indonesia" class="brand-logo" width="722" height="300" />
+            </span>
+          </a>
+          <p>Asosiasi Pengusaha Media Online Indonesia — wadah kolaborasi untuk ekosistem media digital yang sehat dan berkelanjutan.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Twitter">x</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="program.html">Program</a>
+          <a href="berita.html">Berita</a>
+          <a href="daftar-media.html">Daftar Media</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tentang</h4>
+          <a href="tentang.html#visi-misi">Visi & Misi</a>
+          <a href="tentang.html#struktur">Struktur Organisasi</a>
+          <a href="persyaratan.html">Persyaratan Anggota</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+        <div class="footer-col">
+          <h4>Hubungi Kami</h4>
+          <p>Jl. Media Digital No. 12<br />Jakarta Selatan, DKI Jakarta</p>
+          <p>hello@apmoi.id<br />+62 21 0000 1234</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 APMOI. Seluruh hak cipta dilindungi.</p>
+        <div><a href="kebijakan.html">Kebijakan Privasi</a><a href="kebijakan.html#syarat">Syarat & Ketentuan</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>

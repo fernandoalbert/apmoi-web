@@ -1,0 +1,21 @@
+{
+  "name": "APMOI — Asosiasi Pengusaha Media Online Indonesia",
+  "short_name": "APMOI",
+  "description": "Wadah kolaborasi, advokasi, dan pertumbuhan ekosistem media online Indonesia.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a1a33",
+  "theme_color": "#0a1a33",
+  "lang": "id",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Daftar Media", "short_name": "Media", "url": "./daftar-media.html" },
+    { "name": "Persyaratan Anggota", "short_name": "Syarat", "url": "./persyaratan.html" },
+    { "name": "Daftar Sekarang", "short_name": "Daftar", "url": "./pendaftaran.html" }
+  ]
+}
