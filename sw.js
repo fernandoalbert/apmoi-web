@@ -1,5 +1,5 @@
 /* Service worker APMOI — offline fallback untuk aset inti */
-const CACHE = "apmoi-v2";
+const CACHE = "apmoi-v3";
 const CORE = [
   "./", "./index.html", "./css/style.css", "./js/main.js", "./js/pages.js",
   "./js/media.js", "./js/articles.js", "./assets/apmoi-logo-transparent.png",

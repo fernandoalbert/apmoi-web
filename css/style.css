@@ -379,6 +379,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 .logo-item:hover { border-color: #bfdbfe; box-shadow: var(--shadow-sm); transform: translateY(-3px); color: var(--blue); }
 .logo-glyph { font-size: 1.1rem; }
+.logo-text { display: flex; flex-direction: column; align-items: center; gap: 3px; line-height: 1.2; }
+.logo-item small { font-size: 0.66rem; font-weight: 600; color: var(--muted-light); letter-spacing: 0; }
 .g1 { color: var(--blue); } .g2 { color: var(--orange); } .g3 { color: #0891b2; } .g4 { color: var(--purple); }
 .g5 { color: #e11d48; } .g6 { color: var(--blue); } .g7 { color: #16a34a; } .g8 { color: var(--orange); }
 
