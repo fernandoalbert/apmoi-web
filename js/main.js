@@ -9,6 +9,38 @@ document.addEventListener("DOMContentLoaded", () => {
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  /* ---------- Suntik tautan & badge verifikasi ---------- */
+  (() => {
+    const navEl = document.getElementById("nav");
+    if (navEl && !navEl.querySelector('[data-nav="verifikasi"]')) {
+      const link = document.createElement("a");
+      link.href = "verifikasi.html";
+      link.className = "nav-link verify-link";
+      link.dataset.nav = "verifikasi";
+      link.textContent = "✓ Verifikasi";
+      navEl.appendChild(link);
+    }
+
+    const footerTentang = Array.from(document.querySelectorAll(".footer-col")).find(
+      (col) => col.querySelector("h4") && /tentang/i.test(col.querySelector("h4").textContent)
+    );
+    if (footerTentang && !footerTentang.querySelector('a[href="verifikasi.html"]')) {
+      const a = document.createElement("a");
+      a.href = "verifikasi.html";
+      a.textContent = "Status Verifikasi";
+      footerTentang.appendChild(a);
+    }
+
+    if (document.body.dataset.page !== "verifikasi" && !document.querySelector(".verify-badge")) {
+      const badge = document.createElement("a");
+      badge.href = "verifikasi.html";
+      badge.className = "verify-badge";
+      badge.setAttribute("aria-label", "Lihat status verifikasi situs APMOI");
+      badge.innerHTML = '<span class="vb-check" aria-hidden="true">✓</span> Terverifikasi';
+      document.body.appendChild(badge);
+    }
+  })();
+
   /* ---------- Mobile menu ---------- */
   const menuToggle = document.getElementById("menuToggle");
   const nav = document.getElementById("nav");

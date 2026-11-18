@@ -1,11 +1,12 @@
 /* Service worker APMOI — offline fallback untuk aset inti */
-const CACHE = "apmoi-v1";
+const CACHE = "apmoi-v2";
 const CORE = [
   "./", "./index.html", "./css/style.css", "./js/main.js", "./js/pages.js",
   "./js/media.js", "./js/articles.js", "./assets/apmoi-logo-transparent.png",
   "./assets/icon-192.png", "./assets/icon-512.png", "./manifest.webmanifest",
   "./daftar-media.html", "./persyaratan.html", "./pendaftaran.html",
-  "./berita.html", "./tentang.html", "./program.html", "./kontak.html"
+  "./berita.html", "./tentang.html", "./program.html", "./kontak.html",
+  "./verifikasi.html", "./kebijakan.html", "./artikel.html", "./media-detail.html"
 ];
 
 self.addEventListener("install", (e) => {
